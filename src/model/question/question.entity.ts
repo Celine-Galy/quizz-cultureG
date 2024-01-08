@@ -3,8 +3,8 @@ import {
     Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn
   } from 'typeorm';
 import { Answer } from '../answer/answer.entity';
-import { Category } from '../category.entity/category.entity';
-import { Difficulty } from '../difficulty.entity/difficulty.entity';
+import { Category } from '../category/category.entity';
+import { Difficulty } from '../difficulty/difficulty.entity';
 
 @Entity()
 export class Question {

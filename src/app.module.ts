@@ -8,6 +8,9 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { QuestionModule } from './module/question/question.module';
 import { DataInitModule } from './module/data-init/data-init.module';
 import { AnswerModule } from './module/answer/answer.module';
+import { CategoryModule } from './module/category/category.module';
+import { DifficultyModule } from './module/difficulty/difficulty.module';
+import { AuthModule } from './module/auth/auth.module';
 
 @Module({
   imports: [
@@ -24,7 +27,10 @@ import { AnswerModule } from './module/answer/answer.module';
     }),
     DataInitModule,
     QuestionModule,
-    AnswerModule
+    AnswerModule,
+    CategoryModule,
+    DifficultyModule,
+    AuthModule
   ],
   controllers: [AppController],
   providers: [AppService],

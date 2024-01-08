@@ -1,9 +1,9 @@
 import { Inject, Injectable, OnModuleInit } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Category } from '../../model/category.entity/category.entity';
+import { Category } from '../../model/category/category.entity';
 import { Repository } from 'typeorm';
 import { Question } from '../../model/question/question.entity';
-import { Difficulty } from '../../model/difficulty.entity/difficulty.entity';
+import { Difficulty } from '../../model/difficulty/difficulty.entity';
 import { Answer } from '../../model/answer/answer.entity';
 
 @Injectable()
